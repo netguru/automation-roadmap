@@ -21,7 +21,7 @@ export const RoadmapTopicContainer = styled(Card)<{ isWIP?: boolean }>`
 
 export const RoadmapTopicTitle = styled.h3`
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #121212;
   margin-bottom: 16px;
 `;

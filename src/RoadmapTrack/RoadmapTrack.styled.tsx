@@ -22,7 +22,7 @@ export const TrackContainer = styled.div`
 
 export const TrackTitle = styled.h2`
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 24px;
   color: #b4b4b4;
   margin: 0;
@@ -58,7 +58,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
   border-radius: 8px;
   color: #121212;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   width: 100%;
 
   ${({ open }) =>

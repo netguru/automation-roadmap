@@ -44,7 +44,7 @@ export const HeroContainer = styled.div`
 
 export const Title = styled.h1`
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.4rem;
   line-height: 29px;
   margin: 0 0 16px 0;
   ${mediaQuery.tablet} {
@@ -54,7 +54,7 @@ export const Title = styled.h1`
 
 export const Legend = styled.h2`
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   color: #4b4b4b;
   margin-bottom: 0;
@@ -138,7 +138,7 @@ export const StyledPanel = styled.div`
   transition-duration: 150ms;
 
   & h3 {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 700;
   }
   & ${StyledButton} {

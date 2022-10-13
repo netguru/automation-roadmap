@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colorsPalette } from "styles";
 
 export const POPOVER_PADDING = "16px";
-export const POPOVER_MAX_HEIGHT = "70vh";
+export const POPOVER_MAX_HEIGHT = "50vh";
 export const POPOVER_HEADER_HEIGHT = "48px";
 
 export const PopoverContainer = styled.div`
@@ -10,7 +10,7 @@ export const PopoverContainer = styled.div`
   box-shadow: 0px 0px 33px 6px rgba(66, 68, 90, 0.35);
   border-radius: 8px;
   width: fit-content;
-  max-width: 300px;
+  max-width: 350px;
 
   #arrow,
   #arrow::before {
@@ -57,7 +57,7 @@ export const Header = styled.div`
   height: ${POPOVER_HEADER_HEIGHT};
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #ffffff;
 `;
 
