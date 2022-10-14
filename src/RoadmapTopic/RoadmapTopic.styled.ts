@@ -1,3 +1,4 @@
+import Button from "atoms/Button/Button";
 import { Card } from "atoms/Card/Card.styled";
 import styled from "styled-components";
 import { mediaQuery } from "styles/responsive";
@@ -8,14 +9,15 @@ export const RoadmapTopicContainer = styled(Card)<{ isWIP?: boolean }>`
   gap: 12px;
   padding: 16px;
   width: 100%;
-  & button {
-    width: 100%;
-  }
   ${mediaQuery.tablet} {
     width: 311px;
   }
   ${mediaQuery.desktop} {
     width: 311px;
+  }
+
+  & > div > button {
+    width: 100%;
   }
 `;
 
@@ -24,4 +26,8 @@ export const RoadmapTopicTitle = styled.h3`
   font-size: 0.9rem;
   color: #121212;
   margin-bottom: 16px;
+`;
+
+export const TopicButton = styled(Button)`
+  width: 100%;
 `;

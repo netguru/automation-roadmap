@@ -1,11 +1,10 @@
 import React from "react";
 import { Lesson } from "models";
-import { RoadmapTopicContainer, RoadmapTopicTitle } from "./RoadmapTopic.styled";
+import { RoadmapTopicContainer, RoadmapTopicTitle, TopicButton } from "./RoadmapTopic.styled";
 import { AppColors, Colors } from "styles/types";
 import { capitalizeFirstLetter } from "utils";
 import Popover from "molecules/Popover/Popover";
 import RoadmapLesson from "RoadmapLesson/RoadmapLesson";
-import Button from "atoms/Button/Button";
 
 interface RoadmapTopicProps {
   name: string;
@@ -18,7 +17,7 @@ const RoadmapTopic: React.FC<RoadmapTopicProps> = ({ name, lessons, trackName })
       <RoadmapTopicTitle>{capitalizeFirstLetter(name)}</RoadmapTopicTitle>
       {lessons.map((lesson, i) =>
         lesson.wip ? (
-          <Button
+          <TopicButton
             key={lesson.id + i}
             variant={lesson.optional ? "secondary" : "primary"}
             color={
@@ -29,7 +28,7 @@ const RoadmapTopic: React.FC<RoadmapTopicProps> = ({ name, lessons, trackName })
             disabled
           >
             Work In Progress 🚧
-          </Button>
+          </TopicButton>
         ) : (
           <Popover
             key={lesson.id + i}
