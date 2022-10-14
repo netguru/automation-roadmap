@@ -21,7 +21,7 @@ export const HeroContainer = styled.div`
   }
 
   & ${StyledButton} {
-    margin-top: 24px;
+    margin-top: 1.7rem;
     ${mediaQuery.tablet} {
       margin-right: auto;
     }
@@ -31,22 +31,23 @@ export const HeroContainer = styled.div`
   }
 
   ${mediaQuery.tablet} {
-    height: 237px;
+    height: 16.9rem;
     margin-right: auto;
     flex-wrap: wrap;
   }
   ${mediaQuery.desktop} {
     justify-content: flex-start;
-    min-width: 311px;
-    max-width: 400px;
+    min-width: 22.2rem;
+    max-width: 24.6rem;
   }
 `;
 
 export const Title = styled.h1`
   font-weight: 700;
   font-size: 1.4rem;
-  line-height: 29px;
-  margin: 0 0 16px 0;
+  line-height: 2rem;
+  margin: 0 0 1.2rem 0;
+  color: #4b4b4b;
   ${mediaQuery.tablet} {
     margin-right: auto;
   }
@@ -55,7 +56,7 @@ export const Title = styled.h1`
 export const Legend = styled.h2`
   font-weight: 400;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 1.4rem;
   color: #4b4b4b;
   margin-bottom: 0;
   ${mediaQuery.tablet} {
@@ -64,12 +65,12 @@ export const Legend = styled.h2`
 `;
 
 export const IllustrationWrapper = styled.div`
-  margin-bottom: 32px;
+  margin-bottom: 2.3rem;
   max-height: fit-content;
   ${mediaQuery.tablet} {
     flex-basis: 100%;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 1.4rem;
   }
 `;
 export const StyledTransition = styled.div`
@@ -121,17 +122,17 @@ export const FullscreenContainer = styled.div`
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 1.2rem;
 `;
 
 export const StyledPanel = styled.div`
   width: 100%;
-  max-width: 400px;
+  max-width: 28.5rem;
   overflow: hidden;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
-  padding: 24px;
+  padding: 1.7rem;
   text-align: left;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

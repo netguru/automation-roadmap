@@ -8,7 +8,7 @@ export const StyledTag = styled.span<{ variant: ButtonVariants; color: Colors }>
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 0.3rem 0.6rem;
   font-style: normal;
   font-weight: 700;
   width: fit-content;

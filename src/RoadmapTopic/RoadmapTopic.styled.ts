@@ -6,14 +6,14 @@ import { mediaQuery } from "styles/responsive";
 export const RoadmapTopicContainer = styled(Card)<{ isWIP?: boolean }>`
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 16px;
+  gap: 0.9rem;
+  padding: 1.2rem;
   width: 100%;
   ${mediaQuery.tablet} {
     width: 311px;
   }
   ${mediaQuery.desktop} {
-    width: 311px;
+    width: 22.21rem;
   }
 
   & > div > button {
@@ -25,7 +25,7 @@ export const RoadmapTopicTitle = styled.h3`
   font-weight: 700;
   font-size: 0.9rem;
   color: #121212;
-  margin-bottom: 16px;
+  margin-bottom: 1.2rem;
 `;
 
 export const TopicButton = styled(Button)`

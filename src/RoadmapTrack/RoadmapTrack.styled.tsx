@@ -5,11 +5,11 @@ export const TrackContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.7rem;
 
   ${mediaQuery.desktop} {
-    padding: 25px;
-    margin: -25px;
+    padding: 1.8rem;
+    margin: -1.8rem;
     max-height: 100%;
     overflow-y: auto;
     &::-webkit-scrollbar {
@@ -23,10 +23,10 @@ export const TrackContainer = styled.div`
 export const TrackTitle = styled.h2`
   font-weight: 700;
   font-size: 1.2rem;
-  line-height: 24px;
+  line-height: 1.7rem;
   color: #b4b4b4;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 2.3rem;
   display: none;
 
   ${mediaQuery.tablet} {
@@ -45,7 +45,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 1.2rem;
   background-color: white;
   box-shadow: ${({ open }) =>
     open
@@ -68,19 +68,19 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
         /* Bottom border with 16 horizontal padding  */
         content: "";
         display: block;
-        width: calc(100% - 32px);
+        width: calc(100% - 2.3rem);
         height: 1px;
         background-color: #e5e5e5;
         position: absolute;
         bottom: -1px;
-        left: 16px;
+        left: 1.2rem;
       }
     `}
 `;
 
 export const Chevron = styled.div<{ open: boolean }>`
-  width: 14px;
-  height: 14px;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,17 +90,17 @@ export const Chevron = styled.div<{ open: boolean }>`
 
 export const StyledDisclosurePanel = styled.div`
   width: 100%;
-  padding: 0 16px;
+  padding: 0 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.7rem;
 `;
 
 export const MobileTrack = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.7rem;
   background-color: #fff;
   border-radius: 8px;
 `;

@@ -30,7 +30,7 @@ export const secondaryMixin = (color: Colors, hoverStyles: boolean = true) => cs
 
 export const StyledButton = styled.button<Required<ButtonStyles>>`
   border-radius: 8px;
-  padding: 12px 16px;
+  padding: 0.9rem 1.2rem;
   font-style: normal;
   font-weight: 700;
 

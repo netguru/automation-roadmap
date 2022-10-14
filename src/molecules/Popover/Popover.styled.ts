@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { colorsPalette } from "styles";
 
-export const POPOVER_PADDING = "16px";
+export const POPOVER_PADDING = "1.2rem";
 export const POPOVER_MAX_HEIGHT = "50vh";
-export const POPOVER_HEADER_HEIGHT = "48px";
+export const POPOVER_HEADER_HEIGHT = "3.4rem";
 
 export const PopoverContainer = styled.div`
   background: #ffffff;
@@ -15,8 +15,8 @@ export const PopoverContainer = styled.div`
   #arrow,
   #arrow::before {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 1.2rem;
+    height: 1.2rem;
     background: inherit;
     z-index: -1;
   }

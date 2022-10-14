@@ -7,5 +7,6 @@ export const LessonContainer = styled.div`
   width: 100%;
   max-height: calc(${POPOVER_MAX_HEIGHT} - calc(${POPOVER_PADDING} * 2));
   overflow-y: auto;
-  gap: 20px;
+  gap: 1.4rem;
+  color: #4b4b4b;
 `;

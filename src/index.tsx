@@ -13,14 +13,14 @@ import { ReactComponent as OtherIcon } from "assets/other.svg";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  padding: 20px;
+  gap: 3.4rem;
+  padding: 1.4rem;
 
   ${mediaQuery.tablet} {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.7rem;
     justify-content: space-between;
     & div:first-child {
       flex-basis: 100%;
@@ -33,9 +33,9 @@ const AppContainer = styled.div`
   ${mediaQuery.desktop} {
     flex-direction: row;
     justify-content: center;
-    gap: 32px;
+    gap: 2.3rem;
     // On Desktop each track should scroll independently
-    max-height: calc(100vh - 20px);
+    max-height: calc(100vh - 1.4rem);
     overflow-y: hidden;
   }
 `;
