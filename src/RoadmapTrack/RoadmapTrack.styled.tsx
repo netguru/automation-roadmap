@@ -47,7 +47,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
-  background-color: ${colorsPalette.gray[700]};
+  background-color: ${colorsPalette.gray[100]};
   box-shadow: ${({ open }) =>
     open
       ? "none"

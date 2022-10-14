@@ -18,6 +18,10 @@ import { Dialog, Transition } from "@headlessui/react";
 
 const Hero = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  function closeModal() {
+    setIsPopupOpen(false);
+  }
+
   return (
     <HeroContainer>
       <IllustrationWrapper>
@@ -27,7 +31,7 @@ const Hero = () => {
       <Legend>From zero to automation hero</Legend>
       <Button onClick={() => setIsPopupOpen(true)}>How to use</Button>
       <Transition appear show={isPopupOpen} as={Fragment}>
-        <Dialog as={StyledDialog} onClose={() => setIsPopupOpen(false)}>
+        <Dialog as={StyledDialog} onClose={closeModal}>
           <Transition.Child
             as={StyledTransition}
             enter="enter"
@@ -42,7 +46,7 @@ const Hero = () => {
               <Dialog.Panel as={StyledPanel}>
                 <Dialog.Title as="h3">How to use this roadmap?</Dialog.Title>
                 <HowToUse />
-                <Button onClick={() => setIsPopupOpen(false)}>Close</Button>
+                <Button onClick={closeModal}>Close</Button>
               </Dialog.Panel>
             </FullscreenContainer>
           </PanelHolder>

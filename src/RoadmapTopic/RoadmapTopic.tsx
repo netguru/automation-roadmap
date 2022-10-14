@@ -12,6 +12,9 @@ interface RoadmapTopicProps {
   lessons: Lesson[];
 }
 const RoadmapTopic: React.FC<RoadmapTopicProps> = ({ name, lessons, trackName }) => {
+  const buttonColor =
+    trackName && AppColors.includes(trackName as Colors) ? (trackName as Colors) : "primary";
+
   return (
     <RoadmapTopicContainer>
       <RoadmapTopicTitle>{capitalizeFirstLetter(name)}</RoadmapTopicTitle>
@@ -20,11 +23,7 @@ const RoadmapTopic: React.FC<RoadmapTopicProps> = ({ name, lessons, trackName })
           <TopicButton
             key={lesson.id + i}
             variant={lesson.optional ? "secondary" : "primary"}
-            color={
-              trackName && AppColors.includes(trackName as Colors)
-                ? (trackName as Colors)
-                : "primary"
-            }
+            color={buttonColor}
             disabled
           >
             Work In Progress 🚧
@@ -32,11 +31,7 @@ const RoadmapTopic: React.FC<RoadmapTopicProps> = ({ name, lessons, trackName })
         ) : (
           <Popover
             key={lesson.id + i}
-            triggercolor={
-              trackName && AppColors.includes(trackName as Colors)
-                ? (trackName as Colors)
-                : "primary"
-            }
+            triggercolor={buttonColor}
             triggerText={lesson.title}
             triggerVariant={lesson.optional ? "secondary" : "primary"}
             headerText={lesson.ngOnly ? "Netguru only" : undefined}
