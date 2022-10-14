@@ -6,7 +6,8 @@ export const POPOVER_MAX_HEIGHT = "50vh";
 export const POPOVER_HEADER_HEIGHT = "3.4rem";
 
 export const PopoverContainer = styled.div`
-  background: #ffffff;
+  background: ${colorsPalette.gray[100]};
+
   box-shadow: 0px 0px 33px 6px rgba(66, 68, 90, 0.35);
   border-radius: 8px;
   width: fit-content;
@@ -58,7 +59,7 @@ export const Header = styled.div`
   font-style: normal;
   font-weight: 700;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: ${colorsPalette.gray[100]};
 `;
 
 export const PopoverContent = styled.div`

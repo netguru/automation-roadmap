@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { colorsPalette } from "styles";
 import { mediaQuery } from "styles/responsive";
 
 export const TrackContainer = styled.div`
@@ -24,7 +25,7 @@ export const TrackTitle = styled.h2`
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.7rem;
-  color: #b4b4b4;
+  color: ${colorsPalette.gray[400]};
   margin: 0;
   margin-bottom: 2.3rem;
   display: none;
@@ -46,7 +47,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem;
-  background-color: white;
+  background-color: ${colorsPalette.gray[700]};
   box-shadow: ${({ open }) =>
     open
       ? "none"
@@ -56,7 +57,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
     0px 0px 0px rgba(18, 18, 18, 0.04);
   `};
   border-radius: 8px;
-  color: #121212;
+  color: ${colorsPalette.gray[700]};
   font-weight: 700;
   font-size: 1rem;
   width: 100%;
@@ -70,7 +71,7 @@ export const StyledDisclosureButton = styled.button<{ open: boolean }>`
         display: block;
         width: calc(100% - 2.3rem);
         height: 1px;
-        background-color: #e5e5e5;
+        background-color: ${colorsPalette.gray[300]};
         position: absolute;
         bottom: -1px;
         left: 1.2rem;
@@ -101,7 +102,7 @@ export const MobileTrack = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1.7rem;
-  background-color: #fff;
+  background-color: ${colorsPalette.gray[100]};
   border-radius: 8px;
 `;
 

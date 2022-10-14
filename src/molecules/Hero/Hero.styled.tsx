@@ -1,6 +1,7 @@
 import { StyledButton } from "atoms/Button/Button.styled";
 import { HowToUseContainer } from "molecules/HowToUse/HowToUse.styled";
 import styled from "styled-components";
+import { colorsPalette } from "styles";
 import { mediaQuery } from "styles/responsive";
 
 export const HeroContainer = styled.div`
@@ -46,8 +47,8 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 2rem;
-  margin: 0 0 1.2rem 0;
-  color: #4b4b4b;
+  margin: 0 0 1rem 0;
+  color: ${colorsPalette.gray[500]};
   ${mediaQuery.tablet} {
     margin-right: auto;
   }
@@ -57,8 +58,8 @@ export const Legend = styled.h2`
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.4rem;
-  color: #4b4b4b;
-  margin-bottom: 0;
+  color: ${colorsPalette.gray[500]};
+  margin: 0;
   ${mediaQuery.tablet} {
     margin-right: auto;
   }
@@ -130,7 +131,7 @@ export const StyledPanel = styled.div`
   max-width: 28.5rem;
   overflow: hidden;
   border-radius: 8px;
-  background: #fff;
+  background: ${colorsPalette.gray[100]};
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
   padding: 1.7rem;
   text-align: left;

@@ -5,7 +5,7 @@ import { ButtonStyles } from "./types";
 
 export const primaryMixin = (color: Colors, hoverStyles: boolean = true) => css`
   background-color: ${colorsPalette[color][500]};
-  color: white;
+  color: ${colorsPalette.gray[100]};
   border: none;
   ${hoverStyles &&
   css`
@@ -16,7 +16,7 @@ export const primaryMixin = (color: Colors, hoverStyles: boolean = true) => css`
 `;
 
 export const secondaryMixin = (color: Colors, hoverStyles: boolean = true) => css`
-  background-color: white;
+  background-color: ${colorsPalette.gray[100]};
   color: ${colorsPalette[color][500]};
   border: 1px solid ${colorsPalette[color][500]};
   ${hoverStyles &&

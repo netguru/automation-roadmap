@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colorsPalette } from "styles";
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -9,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   font-size: 14px;
 }
 body{
-  background-color: #F5F7F6;
+  background-color: ${colorsPalette.gray[200]};
 }
 `;
 

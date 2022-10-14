@@ -1,6 +1,14 @@
 import { ColorsPalette } from "./types";
 
 export const colorsPalette: ColorsPalette = {
+  gray: {
+    100: "#FFFFFF",
+    200: "#F5F7F6",
+    300: "#E5E5E5",
+    400: "#b4b4b4",
+    500: "#4b4b4b",
+    700: "#121212",
+  },
   primary: {
     500: "#00D563",
     700: "#009F4A",
