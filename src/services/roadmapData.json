@@ -877,6 +877,7 @@
       "Cloud-Based Cross Browser Testing": [
         {
           "name": "placeholder",
+          "wip": true,
           "data": [
             {
               "description": "description 1",
@@ -891,6 +892,7 @@
       "Parallel testing": [
         {
           "name": "placeholder",
+          "wip": true,
           "data": [
             {
               "description": "* Test podpunktów i test **bold** fonta \n * *pochyły* font tez jest okej",
@@ -915,6 +917,7 @@
       "Cypress - advanced": [
         {
           "name": "placeholder",
+          "wip": true,
           "data": [
             {
               "description": "description 1",
@@ -929,6 +932,7 @@
       "Selenium - advanced": [
         {
           "name": "placeholder",
+          "wip": true,
           "data": [
             {
               "description": "description 1",
