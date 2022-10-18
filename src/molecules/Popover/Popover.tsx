@@ -40,9 +40,10 @@ const Popover: React.FC<PopoverProps> = ({
         },
       },
       {
-        name: "flip",
+        name: "preventOverflow",
         options: {
-          rootBoundary: "document",
+          altAxis: true,
+          padding: 0,
         },
       },
     ],
